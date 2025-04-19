@@ -1,0 +1,178 @@
+nav {
+    background-image: url(/img/logo.jpg);
+    background-position: left;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-color: beige;
+    height: 100px;
+    max-width: 100%;
+
+
+
+}
+
+div{
+    display: grid;
+    justify-content: center;
+   
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    
+    
+}
+
+nav li {
+    margin: 50px;
+    list-style-type: none;
+    display: inline;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container {
+    margin: 4px;
+    background-color: rgb(158, 158, 185);
+    min-height:500px;
+    max-width: 30%;
+    border-radius: 10px;
+    border:2px solid #ccc ;
+
+    
+}
+.container:hover{
+    background-color: rgb(33, 173, 57);
+}
+
+
+div img {
+    max-width: 100%;
+    height: auto;
+    border-top: 2px;
+    border-radius: 10px;
+    
+   
+}
+
+div img:hover{
+    transform: scale(1.2);
+}
+
+
+.item{
+
+    
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer {
+    color: white;
+    text-align: center;
+    
+    margin: 4px;
+    background-color: rgb(158, 158, 185);
+    min-height:500px;
+    max-width: 30%;
+    border-radius: 10px;
+    border:2px solid #ccc ;
+    
+}
+.footer:hover{
+    background-color:rgb(33, 173, 57);
+}
+
+.footer img{
+    
+    max-width: 100%;
+    height: auto;
+    border-top: 2px;
+    border-radius: 10px;
+    
+}
+.footer img:hover{
+    transform: scale(1.2);
+    animation-duration: 1s;
+}
+
+
+@media (width<=320px) {
+    .container {
+        background-color: rgb(5, 102, 102);
+        width: 100%;
+        padding: 20px;
+        margin:10px;
+        font-size: small;
+       
+       
+    }
+    .footer{
+        background-color: rgb(5, 102, 102);
+        width: 100%;
+        padding: 10px;
+        margin:10px;
+        float: left;
+        font-size: small;
+    &h1{
+    color: white;
+     }
+     
+    }
+
+    .item {
+        color: black;
+        
+        
+    }
+    nav{
+        height: 100%;
+      width: 100px;
+        float: right;
+       
+
+    }
+
+    nav ul{
+        display:flex ;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: end;
+    margin: 2px;
+        
+    }
+    nav a{
+        font-size: smaller;
+    }
+
+
+
+}
+
+@media (320px<width<=768px) {
+    .container {
+        background-color: brown;
+    }
+    .footer{
+        
+            background-color: brown;
+            clear: both;
+
+    }
+
+    p {
+        font-size: 10px;
+    }
+}
+
+
+
+
